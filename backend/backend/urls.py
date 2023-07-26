@@ -17,7 +17,7 @@ from django.contrib import admin
 from todo import views                            # add this
 from rest_framework import routers                    # add this
 from django.urls import path, include                 # add this
-
+from .views import root_route
 router = routers.DefaultRouter()                      # add this
 router.register(r'tasks', views.TodoView, 'task')     # add this
 
@@ -27,8 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),
-    path('dj-rest-auth/', include('dj_rest_auth.urls')),
-    path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
-
+    path('', root_route)
     # add this
 ]
