@@ -39,7 +39,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', os.environ.get(
-    'ALLOWED_HOST'),'todo-appp-41550515582d.herokuapp.com', '8000-banafshaahma-djangotodo-fc9r6ga9wix.ws-us102.gitpod.io']
+    'ALLOWED_HOST'),'todo-appp-41550515582d.herokuapp.com']
 
 
 # Application definition
