@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'django.contrib.sites',
     'allauth',
-    'cloudinary',
+    # 'cloudinary',
     'todo',
     'corsheaders',
     'rest_framework',
@@ -132,7 +132,6 @@ else:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
-    print('connected')
 
 
 # Password validation
