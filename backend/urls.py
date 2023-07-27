@@ -19,7 +19,8 @@ from rest_framework import routers                    # add this
 from django.urls import path, include                 # add this
 from .views import root_route
 router = routers.DefaultRouter()                      # add this
-router.register(r'tasks', views.TodoView, 'task')     # add this
+router.register(r'tasks', views.TodoView, 'task')    # add this
+from .views import root_route, logout_route
 
 # from django.urls import path  - DELETE THIS
 
@@ -27,6 +28,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),
-    path('', root_route)
+    path('', root_route),
+    path('dj-rest-auth/logout/', logout_route),
+    path('dj-rest-auth/', include('dj_rest_auth.urls')),
     # add this
 ]
