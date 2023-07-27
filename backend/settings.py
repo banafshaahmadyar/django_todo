@@ -12,9 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
+import dj_database_url , psycopg2
 import re
-import psycopg2
 
 if os.path.exists('env.py'):
     import env
