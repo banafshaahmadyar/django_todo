@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url , psycopg2
+import dj_database_url
+import psycopg2
 import re
 
 if os.path.exists('env.py'):
@@ -38,8 +39,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', os.environ.get(
-    'ALLOWED_HOST'),'todo-appp-41550515582d.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', os.environ.get('ALLOWED_HOST')]
 
 
 # Application definition
