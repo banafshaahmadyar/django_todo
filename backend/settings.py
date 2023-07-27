@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'django.contrib.sites',
     'allauth',
+    'psycopg2',
     # 'cloudinary',
     'todo',
     'corsheaders',
