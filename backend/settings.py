@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 import re
+import psycopg2
 
 if os.path.exists('env.py'):
     import env
