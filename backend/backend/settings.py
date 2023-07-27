@@ -39,7 +39,7 @@ SECRET_KEY = 'django-insecure-wjhzz_q51#pq9dsjl!52q7syk6p(a0kiqr+ee5x_raabvx5-is
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', os.environ.get(
-    'ALLOWED_HOST'), '8000-banafshaahma-djangotodo-fc9r6ga9wix.ws-us102.gitpod.io']
+    'ALLOWED_HOST'),'todo-appp.herokuapp.com', '8000-banafshaahma-djangotodo-fc9r6ga9wix.ws-us102.gitpod.io']
 
 
 # Application definition
